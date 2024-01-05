@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="css.css">
+
+    <script src="js.js"></script>
+    <script src="floursfunctions.js"></script>
+    <script src="sugarsfunctions.js"></script>
+    <script src="syrupsfunctions.js"></script>
+    <script src="buttersoilsfunctions.js"></script>
+    <script src="liquidsfunctions.js"></script>
+</head>
+<body class="body" style="padding-bottom: 1000px;">
+  <div class="div1">
+    <p class="title">UnitCon</p>
+  </div>
+  <div class="div2">
+    <button class="click-here-button" id="clickherebutton" style="display:inline-block;" onclick="scrollWintop550left0(),revealUnitConverterTable()" >Click here to convert units</button>
+  </div>
+
+<div class="ingredients-converter-table" id="ingredientsConverterTable" style="display:none;" >
+    <div class="flours"> 
+
+        <div class="flour-section-one">
+            <label for="flour-grain" class="flour-grain-label">Flour/Grain</label>
+            <select class="flour-select-one"name="solids" id="floursselectone">
+                <option value="none">None</option>
+                <option value="oats">Oats</option>
+                <option value="flour">Flour</option>
+            </select>
+            
+        </div>
+            
+            
+        <div class="flour-section-two">
+            <label class="flour-enter-value" for="enter-value">Enter Value</label>
+            <input class="input-flour" type="text" placeholder="Enter Value" id="floursinputone">
+        </div>
+
+
+
+        <div class="flour-section-three">
+            <label for="enter-value">Convert from</label>
+            <select name="units" class="flour-select-two" id="floursselecttwo" >
+                <option value="" selected disabled hidden>Select unit of measurement</option>
+                <option value="none">None</option>
+                <option value="grams">grams (g)</option>
+                    
+                    
+                    <option value="Cups">Cups</option>
+                    <option value="Tablespoon">tablespoon (tbsp)</option>
+                    
+                
+                </select>
+
+                <label for="enter-value">to</label>
+                <select name="units" class="flour-select-three" id="floursselectthree">
+                    <option value="" selected disabled hidden>Select unit of measurement</option>
+                    <option value="none">None</option>
+                    <option value="grams">grams (g)</option>
+                    
+                    <option value="Cups">Cups</option>
+                    <option value="Tablespoon">tablespoon (tbsp)</option>
+                    
+                    
+                </select>
+            
+            </div>
+
+
+
+            <div class="flour-section-four"><button class="floursconvertbutton" id="floursconvertbutton" onclick="floursFunction()">Convert</button></div>
+            <div class="flour-section-five-output" id="floursoutput" style="background-color: brown;"> <p id="floursoutput1" style="margin-top:20px; color:brown;"> Hello</p> </div>
+            </div> 
+
+
+
+            <div class="sugars">
+
+                <div class="sugars-section-one">
+                    <label for="sugars-option">Sugars</label>
+                    <select class="sugars-select-one"name="solids" id="sugarsselectone">
+                        <option value="" disabled hidden selected> Select Sugar</option>
+                        <option value="none">None</option>
+                        <option value="brown sugar">Brown Sugar</option>
+                        <option value="granulated sugar">Granulated Sugar</option>
+                        <option value="icing sugar">Icing Sugar</option>
+                    </select>
+                </div>
+                
+                <div class="sugars-section-two">
+                    <label for="enter-value" class="sugars-enter-value">Enter Value</label>
+                    <input class="input-sugars" type="text" placeholder="Enter Value" id="sugarsinputone">
+                </div>
+                <div class="sugars-section-three">
+                    <label for="sugars-enter-value">Convert from</label>
+                    <select name="units" class="sugars-select-two" id="sugarsselecttwo">
+                        <option value="" selected disabled hidden>Select unit of measurement</option>
+                        <option value="none">None</option>
+                        <option value="grams">grams (g)</option>
+                        
+                    
+                        <option value="Cups">Cups</option>
+                        <option value="Tablespoon">tablespoon (tbsp)</option>
+                        
+                    
+                    </select>
+
+                    <label for="sugars-enter-value">to</label>
+                    <select name="sugars-units" class="sugars-select-three" id="sugarsselectthree">
+                        <option value="" selected disabled hidden>Select unit of measurement</option>
+                        <option value="none">None</option>
+                        <option value="grams">grams (g)</option>
+                        
+                        <option value="Cups">Cups</option>
+                        <option value="Tablespoon">tablespoon (tbsp)</option>
+                   
+                        
+                    </select>
+                
+                </div>
+
+
+                <div class="sugars-section-four"><button class="sugarsconvertbutton" id="sugarsconvertbutton" onclick="sugarsFunction()" >Convert</button></div>
+                <div class="sugars-section-five-output" id="sugarsoutput" style="background-color: brown;"><p class="sugarsoutput" id="sugarsoutput1" style="margin-top:20px;color:brown;"> Aliah </p></div>
+            </div>
+
+
+
+            <div class="syrups">
+                
+                <div class="syrups-section-one">
+                    <label for="syrups-option">Syrups</label>
+                    <select class="syrups-select-one" id="syrupsselectone">
+                        <option value="" disabled hidden selected> Select Syrup</option>
+                        <option value="none">None</option>
+                        <option value="Golden Syrup">Golden Syrup</option>
+                        <option value="Honey">Honey</option>
+    
+                    </select>
+                </div>
+                
+                
+                <div class="syrups-section-two">
+                    <label for="syrups-enter-value">Enter Value</label>
+                    <input class="input-syrups" type="text" placeholder="Enter Value" id="syrupsinputone">
+                </div>
+                <div class="syrups-section-three">
+                    <label for="enter-value">Convert from</label>
+                    <select name="units" class="syrups-select-two" id="syrupsselecttwo">
+                        <option value="" selected disabled hidden>Select unit of measurement</option>
+                        <option value="none">None</option>
+                        <option value="grams">grams (g)</option>
+                        
+                        <option value="Cups">Cups</option>
+                        <option value="Tablespoon">tablespoon (tbsp)</option>
+                       
+                    
+                    </select>
+
+                    <label for="enter-value">to</label>
+                    <select name="units" class="syrups-select-three" id="syrupsselectthree">
+                        <option value="" selected disabled hidden>Select unit of measurement</option>
+                        <option value="none">None</option>
+                        <option value="grams">grams (g)</option>
+                        
+                        <option value="Cups">Cups</option>
+                        <option value="Tablespoon">tablespoon (tbsp)</option>
+                        
+                        
+                    </select>
+                
+                </div>
+
+
+                <div class="syrups-section-four"><button class="syrupsconvertbutton"id="syrupsconvertbutton" onclick="syrupsFunction()">Convert</button></div>
+                <div class="syrups-section-five-output" id="syrupsoutput" style="background-color: brown;"><p class="syrupsoutput" id="syrupsoutput1" style="margin-top:20px; color:brown;"> Aliah </p></div>
+            </div>
+
+            <div class="butters-oils">
+
+                <div class="butters-oils-section-one">
+                    <label for="butters-oils-option">Butter/Oil</label>
+                    <select class="butters-oils-select-one" id="buttersoilsselectone">
+                        <option value="" disabled hidden selected> Select Butter/Oil</option>
+                        <option value="none">None</option>
+                        <option value="butter">Butter</option>
+                        <option value="oil">Oil</option>
+                    </select>
+                </div>
+                
+                
+                <div class="butters-oils-section-two">
+                    <label for="butters-oils-enter-value">Enter Value</label>
+                    <input class="input-butters-oils" type="text" placeholder="Enter Value" id="buttersoilsinputone">
+                </div>
+                <div class="butters-oils-section-three">
+                    <label for="butters-oils-enter-value-two">Convert from</label>
+                    <select name="units" class="butters-oils-select-two" id="buttersoilsselecttwo">
+                        <option value="" selected disabled hidden>Select unit of measurement</option>
+                        <option value="none">None</option>
+                        <option value="grams">grams (g)</option>
+                        
+                        <option value="Cups">Cups</option>
+                        <option value="Tablespoon">tablespoon (tbsp)</option>
+                        
+                    
+                    </select>
+
+                    <label for="butters-oils-enter-value-three">to</label>
+                    <select name="units" class="butters-oils-select-three" id="buttersoilsselectthree">
+                        <option value="" selected disabled hidden>Select unit of measurement</option>
+                        <option value="none">None</option>
+                        <option value="grams">grams (g)</option>
+                      
+                        <option value="Cups">Cups</option>
+                        <option value="Tablespoon">tablespoon (tbsp)</option>
+                       
+                        
+                    </select>
+                
+                </div>
+
+
+                <div class="butters-oils-section-four"><button  class="buttersoilsconvertbutton" id="buttersoilsconvertbutton" onclick="buttersoilsFunction()">Convert</button></div>
+                <div class="butters-oils-section-five-output" id="buttersoilsoutput" style="background-color: brown;"><p class="buttersoilsoutput" id="buttersoilsoutput1"  style="margin-top:20px;color:brown;"> Aliah </p></div>
+            </div>
+
+
+
+
+            <div class="liquids">
+                <div class="liquids-section-one">
+                    <label for="liquids-option">Liquids</label>
+                    <select class="liquids-select-one" id="liquidsselectone">
+                        <option value="" disabled hidden selected> Select Liquid</option>
+                        <option value="none">None</option>
+                        <option value="Water">Water</option>
+                        <option value="Milk">Milk</option>
+                    </select>
+                </div>
+                
+                
+                <div class="liquids-section-two">
+                    <label for="liquids-enter-value-one" class="liquids-enter-value">Enter Value</label>
+                    <input class="input-liquids" type="text" placeholder="Enter Value" id="liquidsinputone">
+                </div>
+                <div class="liquids-section-three">
+                    <label for="liquids-enter-value-two">Convert from</label>
+                    <select name="units" class="liquids-select-two" id="liquidsselecttwo">
+                        <option value="" selected disabled hidden>Select unit of measurement</option>
+                        <option value="none">None</option>
+                        
+                        <option value="ml">millilitres (ml)</option>
+                        <option value="Cups">Cups</option>
+                        <option value="Tablespoon">tablespoon (tbsp)</option>
+                        
+                    
+                    </select>
+
+                    <label for="liquids-enter-value-three">to</label>
+                    <select name="units" class="liquids-select-three" id="liquidsselectthree">
+                        <option value="" selected disabled hidden>Select unit of measurement</option>
+                        <option value="none">None</option>
+                        <option value="ml">millilitres (ml)</option>
+                        <option value="Cups">Cups</option>
+                        <option value="Tablespoon">tablespoon (tbsp)</option>
+                        
+                        
+                    </select>
+                
+                </div>
+
+
+                <div class="liquids-section-four"><button class="liquidsconvertbutton" id="liquidsconvertbutton" onclick="liquidsFunction()">Convert</button></div>
+                <div class="liquids-section-five-output" id="liquidsoutput" style="background-color: brown;"><p class="liquidsoutput" id="liquidsoutput1" style="margin-top:20px; color:brown;"> Aliah </p></div>
+            </div>
+        </div>
+    </div>
+    <div class="div3"> <button class="backtohomepage-button" id="backtohomepagebutton" style="display:none" onclick="hideUnitConverterTable(),scrollWintopminus550()" >Go back to Homepage</button></div>
+
+</body>
+</html>
