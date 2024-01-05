@@ -1,0 +1,628 @@
+
+.flours{
+    height:60px;
+    display:flex;
+    justify-content: space-between;
+    width:1100px;
+    margin-top: 200px;
+    margin-left:230px;
+    background-color: bisque;
+
+}
+.flour-section-one{
+    
+    width:140px;
+    display:flex;
+    flex-direction: column;
+ 
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+    
+
+
+
+
+}
+
+.flour-select-one{
+    width:122px;
+    height:21px;
+    margin-top:1px;
+    margin-left:6px;
+
+
+}
+
+
+
+
+
+.flour-section-two{
+    
+    width:150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+
+}
+.flour-enter-value{
+   padding-left: 0px;
+}
+.input-flour{
+    width:80px;
+    align-self: center;
+    margin-left:11px;
+    margin-top: 1px;
+    
+}
+
+
+
+
+.flour-section-three{
+    
+     flex:1;
+     min-width:fit-content;
+     display:flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content:center;
+     border-right-style: solid;
+     border-right-width: 3px;
+     border-right-color: rgba(165, 42, 42, 0.462);
+     border-bottom-style: double;
+     border-bottom-width: 5px;
+     border-bottom-color: rgba(165, 42, 42, 0.462);
+ 
+     
+ }
+
+.flour-select-two{
+    margin-left: 5px;
+    margin-right:5px;
+
+}
+
+.flour-select-three{
+    margin-left: 5px;
+
+}
+
+
+
+.flour-section-four{
+  
+    width: 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+    
+}
+
+.flour-section-five-output{
+  
+    width:200px;
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+
+}
+
+
+
+
+
+
+
+.sugars{
+    height:60px;
+    display:flex;
+    justify-content: space-between;
+    width:1100px;
+   
+    margin-left:230px;
+}
+
+.sugars-section-one{
+    background-color: bisque;
+    width:140px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+}
+
+.sugars-select-one{
+    width:122px;
+    height:21px;
+    margin-top: 1px;
+    margin-left: 6px;
+}
+.sugars-section-two{
+    background-color: bisque;
+    width:150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+}
+.sugars-enter-value{
+    padding-left: 0px;
+ }
+.input-sugars{
+    width:80px;
+    align-self: center;
+    margin-left:11px;
+    margin-top: 0.5px;
+}
+
+.sugars-section-three{
+    background-color: bisque;
+    flex:1;
+    min-width:fit-content;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+}
+
+.sugars-select-two{
+    margin-left: 5px;
+    margin-right:5px;
+
+}
+
+.sugars-select-three{
+    margin-left: 5px;
+
+}
+
+
+.sugars-section-four{
+    background-color: bisque;
+    width: 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+    
+}
+
+
+.sugars-section-five-output{
+    background-color: bisque;
+    width:200px;
+ 
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+}
+
+
+
+
+
+
+
+
+
+.syrups{
+    height:60px;
+    display:flex;
+    justify-content: space-between;
+    width:1100px;
+   
+    margin-left:230px;
+}
+.syrups-section-one{
+    background-color:bisque;
+    width:140px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+}
+
+.syrups-select-one{
+    width:122px;
+    height:21px;
+    margin-top:1px;
+    margin-left: 6px;
+
+}
+
+.syrups-section-two{
+    background-color: bisque;
+    width:150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+}
+
+.syrups-enter-value{
+    padding-left: 0px;
+ }
+.input-syrups{
+     width:80px;
+     align-self: center;
+     margin-left:11px;
+     margin-top: 1px;
+     
+ }
+ 
+ 
+ 
+ 
+ .syrups-section-three{
+      background-color:bisque;
+      flex:1;
+      min-width:fit-content;
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content:center;
+      border-right-style: solid;
+      border-right-width: 3px;
+      border-right-color: rgba(165, 42, 42, 0.462);
+      border-bottom-style: double;
+      border-bottom-width: 5px;
+      border-bottom-color: rgba(165, 42, 42, 0.462);
+  
+      
+  }
+ 
+ .syrups-select-two{
+     margin-left: 5px;
+     margin-right:5px;
+ 
+ }
+ 
+ .syrups-select-three{
+     margin-left: 5px;
+ 
+ }
+ 
+ 
+ 
+ .syrups-section-four{
+     background-color:bisque;
+     width: 80px;
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content:center;
+     border-right-style: solid;
+     border-right-width: 3px;
+     border-right-color: rgba(165, 42, 42, 0.462);
+     border-bottom-style: double;
+     border-bottom-width: 5px;
+     border-bottom-color: rgba(165, 42, 42, 0.462);
+ 
+     
+ }
+
+ .syrups-section-five-output{
+    background-color: bisque;
+    width:200px;
+   
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+
+}
+
+
+
+
+
+.butters-oils{
+    height:60px;
+    display:flex;
+    justify-content:space-between;
+    width:1100px;
+   
+    margin-left:230px;
+}
+
+.butters-oils-section-one{
+    background-color: bisque;
+    width:140px;
+    display:flex;
+    flex-direction: column;
+ 
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+
+
+}
+
+.butters-oils-select-one{
+    width:122px;
+    height:21px;
+    margin-top:1px;
+    margin-left: 6px;
+
+}
+
+
+
+.butters-oils-section-two{
+    background-color: bisque;
+    width:150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+}
+.butters-oils-enter-value{
+   padding-left: 0px;
+}
+.input-butters-oils{
+    width:80px;
+    align-self: center;
+    margin-left:11px;
+    margin-top: 1px;
+    
+}
+
+.butters-oils-section-three{
+     background-color:bisque;
+     flex:1;
+     min-width:fit-content;
+     display:flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content:center;
+     border-right-style: solid;
+     border-right-width: 3px;
+     border-right-color: rgba(165, 42, 42, 0.462);
+     border-bottom-style: double;
+     border-bottom-width: 5px;
+     border-bottom-color: rgba(165, 42, 42, 0.462);
+ 
+     
+ }
+
+.butters-oils-select-two{
+    margin-left: 5px;
+    margin-right:5px;
+
+}
+
+.butters-oils-select-three{
+    margin-left: 5px;
+
+}
+
+
+
+.butters-oils-section-four{
+    background-color:bisque;
+    width: 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+}
+
+.butters-oils-section-five-output{
+    background-color: bisque;
+    width:200px;
+   
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+
+}
+
+
+
+
+
+.liquids{
+    height:60px;
+    display:flex;
+    justify-content: space-between;
+    width:1100px;
+   
+    margin-left:230px;
+
+}
+
+.liquids-section-one{
+    background-color:bisque;
+    width:140px;
+    display:flex;
+    flex-direction: column;
+ 
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+
+
+}
+
+.liquids-select-one{
+    width:122px;
+    height:21px;
+    margin-top:1px;
+    margin-left: 6px;
+
+}
+
+
+
+.liquids-section-two{
+    background-color: bisque;
+    width:150px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+}
+.liquids-enter-value{
+   padding-left: 0px;
+}
+.input-liquids{
+    width:80px;
+    align-self: center;
+    margin-left:11px;
+    margin-top: 1px;
+    
+}
+
+.liquids-section-three{
+     background-color:bisque;
+     flex:1;
+     min-width:fit-content;
+     display:flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content:center;
+     border-right-style: solid;
+     border-right-width: 3px;
+     border-right-color: rgba(165, 42, 42, 0.462);
+     border-bottom-style: double;
+     border-bottom-width: 5px;
+     border-bottom-color: rgba(165, 42, 42, 0.462);
+ 
+     
+ }
+
+.liquids-select-two{
+    margin-left: 5px;
+    margin-right:5px;
+
+}
+
+.liquids-select-three{
+    margin-left: 5px;
+
+}
+
+
+
+.liquids-section-four{
+    background-color:bisque;
+    width: 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-right-style: solid;
+    border-right-width: 3px;
+    border-right-color: rgba(165, 42, 42, 0.462);
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+}
+
+.liquids-section-five-output{
+    background-color: bisque;
+    width:200px;
+    
+    border-bottom-style: double;
+    border-bottom-width: 5px;
+    border-bottom-color: rgba(165, 42, 42, 0.462);
+
+
+}
+
+

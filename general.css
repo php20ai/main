@@ -1,0 +1,123 @@
+
+p{
+    margin:0px;
+}
+
+body{
+    margin-top:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+
+.body-div{
+    display:flex;
+    flex-direction: column;
+}
+
+.webpage-header-div{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+    justify-content: space-between;
+   
+    padding-bottom: 0;
+    padding-top:0;
+    background-image:linear-gradient(to right,
+        rgb(107, 61, 0),bisque
+        );
+    border:solid;
+    border-color: bisque;
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    border-bottom-style:double;
+    border-bottom-width:10px;
+}
+
+.webpage-header{
+    font-size: 120px;
+    margin-left:43px;
+    color:bisque;
+}
+
+.image-header{
+    max-width:556.61px;
+    border:solid;
+    border-color: bisque;
+    border-top: none;
+    border-bottom:none;
+    border-right: none;
+    border-left-style:double;
+    border-left-width:10px;
+    
+    
+    
+}
+
+.image-header-ref{
+    display:inline-block;
+    text-align: right;
+    background-color: bisque;
+    
+}
+
+.ingredients{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    flex:1;
+    justify-content: space-between;
+   
+    padding-bottom: 0;
+    padding-top:0;
+    background-image:linear-gradient(to right,
+        rgb(107, 61, 0),bisque
+        );
+    border:solid;
+    border-color: bisque;
+    border-top: none;
+    border-left:none;
+    border-right:none;
+    border-bottom-style:double;
+    border-bottom-width:10px;
+    padding-top: 100px;
+   
+    
+}
+
+
+.click-here-button{
+    height:45px;
+    width:275px;
+    border-radius: 40px;
+    background-color:  rgb(107, 61, 0);
+    color:bisque;
+    border: none;
+    transition: opacity 0.25s;
+    
+}
+
+.click-here-button:hover{
+    cursor: pointer;
+    opacity:0.85;
+
+}
+.click-here-button-text{
+    font-size:20px;
+}
+
+.floursconvertbutton,.sugarsconvertbutton,.syrupsconvertbutton,.buttersoilsconvertbutton,.liquidsconvertbutton{
+    height:25px;
+    width:72px;
+    border-radius: 40px;
+    background-color:   brown;
+    color:bisque;
+    border: none;
+    transition: opacity 0.25s; 
+}
+
+
