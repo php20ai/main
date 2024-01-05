@@ -1,0 +1,66 @@
+
+
+body{
+    margin: 0;
+    padding-top:180px;
+    background-color: brown;
+    text-align: center;
+    padding-bottom:0;
+    margin-bottom: 0;
+    height:0px;
+}
+
+.image{
+    width: 700px;
+    border-style: double;
+    border-width: 5px;
+    border-color:brown;
+}
+
+.title{
+    font-size: 120px;
+    color:bisque;
+   
+}
+
+.click-here-button{
+    margin-top: 160px;
+    background-color: bisque;
+    height:53px;
+    width:300px;
+    font-size: 22px;
+    border-radius: 100px;
+    border:none;
+    color:brown;
+   
+
+
+}
+
+.click-here-button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+    
+    
+   
+
+
+}
+.backtohomepage-button{
+    margin-top: 80px;
+    background-color: bisque;
+    height:53px;
+    width:300px;
+    font-size: 22px;
+    border-radius: 100px;
+    border:none;
+    color:brown;
+    margin-left: 0px;
+
+}
+
+.backtohomepage-button:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
