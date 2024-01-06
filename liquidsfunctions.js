@@ -8,156 +8,157 @@ function liquidsFunction(){
     var liquidsinputone=document.getElementById("liquidsinputone").value;
     var parsfloatliquids=parseFloat(liquidsinputone);
     
+    if (parsfloatliquids>=0){
+        if (select1value=="Water") {
 
-    if (select1value=="Water") {
+            if (select2value=="ml" && select3value=="Cups") {
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
 
-        if (select2value=="ml" && select3value=="Cups") {
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatliquids)/(250);
+                var outputrounded=Math.round(output*100)/100;
 
-            var output=(parsfloatliquids)/(250);
-            var outputrounded=Math.round(output*100)/100;
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " ml" +" = "+" " + outputrounded + " Cups" ;
 
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " ml" +" = "+" " + outputrounded + " Cups" ;
+            }
+
+            if (select2value=="Cups" && select3value=="ml") {
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+
+                var output=(parsfloatliquids)*(250);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " Cups" +" = "+" " + outputrounded + " ml" ;
+
+            }
+
+
+            if (select2value=="ml" && select3value=="Tablespoon") {
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+
+                var output=(parsfloatliquids)/(17.8);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " ml" +" = "+" " + outputrounded + " tablespoon (tbsp)";
+
+            }
+
+            if (select2value=="Tablespoon" && select3value=="ml") {
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+
+                var output=(parsfloatliquids)*(17.8);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " tablespoon (tbsp)" +" = "+" " + outputrounded + " ml"; 
+
+            }
+
+            if (select2value=="Cups" && select3value=="Tablespoon") {
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+
+                var output=(250/(17.8))*(parsfloatliquids);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " Cups" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
+
+            }
+
+            if (select2value=="Tablespoon" && select3value=="Cups") {
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+
+                var output=(parsfloatliquids)/(250/(17.8));
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " tablespoon (tbsp)" +" = "+" " + outputrounded + " Cups"; 
+
+            }
+
+        
+
+
+
 
         }
 
-        if (select2value=="Cups" && select3value=="ml") {
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+        if (select1value=="Milk") {
 
-            var output=(parsfloatliquids)*(250);
+            if (select2value=="ml" && select3value=="Cups") {
+                
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
 
-            var outputrounded=Math.round(output*100)/100;
+                var output=(parsfloatliquids)/(250);
+                var outputrounded=Math.round(output*100)/100;
 
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " Cups" +" = "+" " + outputrounded + " ml" ;
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " ml" +" = "+" " + outputrounded + " Cups" ;
+
+            }
+
+            if (select2value=="Cups" && select3value=="ml") {
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+
+                var output=(parsfloatliquids)*(250);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " Cups" +" = "+" " + outputrounded + " ml" ;
+
+            }
+
+
+            if (select2value=="ml" && select3value=="Tablespoon") {
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+
+                var output=(parsfloatliquids)/(17.8);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " ml" +" = "+" " + outputrounded + " tablespoon (tbsp)";
+
+            }
+
+            if (select2value=="Tablespoon" && select3value=="ml") {
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+
+                var output=(parsfloatliquids)*(17.8);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " tablespoon (tbsp)" +" = "+" " + outputrounded + " ml"; 
+
+            }
+
+            if (select2value=="Cups" && select3value=="Tablespoon") {
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+
+                var output=(250/(17.8))*(parsfloatliquids);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " Cups" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
+
+            }
+
+            if (select2value=="Tablespoon" && select3value=="Cups") {
+                document.getElementById("liquidsoutput").style.backgroundColor="bisque";
+
+                var output=(parsfloatliquids)/(250/(17.8));
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " tablespoon (tbsp)" +" = "+" " + outputrounded + " Cups"; 
+
+            }
+
+
+
+
 
         }
-
-
-        if (select2value=="ml" && select3value=="Tablespoon") {
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
-
-            var output=(parsfloatliquids)/(17.8);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " ml" +" = "+" " + outputrounded + " tablespoon (tbsp)";
-
-        }
-
-        if (select2value=="Tablespoon" && select3value=="ml") {
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
-
-            var output=(parsfloatliquids)*(17.8);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " tablespoon (tbsp)" +" = "+" " + outputrounded + " ml"; 
-
-        }
-
-        if (select2value=="Cups" && select3value=="Tablespoon") {
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
-
-            var output=(250/(17.8))*(parsfloatliquids);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " Cups" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
-
-        }
-
-        if (select2value=="Tablespoon" && select3value=="Cups") {
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
-
-            var output=(parsfloatliquids)/(250/(17.8));
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " tablespoon (tbsp)" +" = "+" " + outputrounded + " Cups"; 
-
-        }
-
-       
-
-
-
-
+        
+        
     }
-
-    if (select1value=="Milk") {
-
-        if (select2value=="ml" && select3value=="Cups") {
-            
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
-
-            var output=(parsfloatliquids)/(250);
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " ml" +" = "+" " + outputrounded + " Cups" ;
-
-        }
-
-        if (select2value=="Cups" && select3value=="ml") {
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
-
-            var output=(parsfloatliquids)*(250);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " Cups" +" = "+" " + outputrounded + " ml" ;
-
-        }
-
-
-        if (select2value=="ml" && select3value=="Tablespoon") {
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
-
-            var output=(parsfloatliquids)/(17.8);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " ml" +" = "+" " + outputrounded + " tablespoon (tbsp)";
-
-        }
-
-        if (select2value=="Tablespoon" && select3value=="ml") {
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
-
-            var output=(parsfloatliquids)*(17.8);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " tablespoon (tbsp)" +" = "+" " + outputrounded + " ml"; 
-
-        }
-
-        if (select2value=="Cups" && select3value=="Tablespoon") {
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
-
-            var output=(250/(17.8))*(parsfloatliquids);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " Cups" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
-
-        }
-
-        if (select2value=="Tablespoon" && select3value=="Cups") {
-            document.getElementById("liquidsoutput").style.backgroundColor="bisque";
-
-            var output=(parsfloatliquids)/(250/(17.8));
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("liquidsoutput1").innerHTML = parsfloatliquids + " tablespoon (tbsp)" +" = "+" " + outputrounded + " Cups"; 
-
-        }
-
-
-
-
-
-    }
-    
-    
 }
