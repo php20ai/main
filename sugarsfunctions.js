@@ -8,224 +8,227 @@ function sugarsFunction(){
     var sugarsinputone=document.getElementById("sugarsinputone").value;
     var parsfloatsugars=parseFloat(sugarsinputone);
     
+    if (parsfloatsugars>=0){
 
-    if (select1value=="brown sugar") {
-        
-        if (select2value=="grams" && select3value=="Cups") {
+        if (select1value=="brown sugar") {
             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(parsfloatsugars)/(180);
-            var outputrounded=Math.round(output*100)/100;
+            if (select2value=="grams" && select3value=="Cups") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatsugars)/(180);
+                var outputrounded=Math.round(output*100)/100;
 
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " Cups" ;
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " Cups" ;
+
+            }
+
+            if (select2value=="Cups" && select3value=="grams") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(180)*(parsfloatsugars);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " g" ;
+
+            }
+
+
+            if (select2value=="grams" && select3value=="Tablespoon") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatsugars)/(13.2);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " tablespoon (tbsp)" 
+
+            }
+
+            if (select2value=="Tablespoon" && select3value=="grams") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(13.2)*(parsfloatsugars);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " g"; 
+
+            }
+
+            if (select2value=="Cups" && select3value=="Tablespoon") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(180/(13.2))*(parsfloatsugars);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
+
+            }
+
+            if (select2value=="Tablespoon" && select3value=="Cups") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatsugars)/(180/(13.2));
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " Cups" 
+
+            }
+
+        
 
         }
 
-        if (select2value=="Cups" && select3value=="grams") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(180)*(parsfloatsugars);
+        if (select1value=="granulated sugar") {
 
-            var outputrounded=Math.round(output*100)/100;
+            if (select2value=="grams" && select3value=="Cups") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatsugars)/(200);
 
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " g" ;
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " Cups";
+
+            }
+
+            if (select2value=="Cups" && select3value=="grams") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(200)*(parsfloatsugars);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " g";
+            }
+
+
+            if (select2value=="grams" && select3value=="Tablespoon") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatsugars)/(12);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
+
+            }
+
+            if (select2value=="Tablespoon" && select3value=="grams") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatsugars)*(12);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " g";
+
+            }
+
+            if (select2value=="Cups" && select3value=="Tablespoon") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(200/(12))*(parsfloatsugars);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
+
+            }
+
+            if (select2value=="Tablespoon" && select3value=="Cups") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatsugars)/(200/(12));
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " Cups";
+
+            }
+
+
+
 
         }
+        
+        if (select1value=="icing sugar") {
+
+            if (select2value=="grams" && select3value=="Cups") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatsugars)/(100);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " Cups";
+
+            }
+
+            if (select2value=="Cups" && select3value=="grams") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(100)*(parsfloatsugars);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " g";
+            }
 
 
-        if (select2value=="grams" && select3value=="Tablespoon") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(parsfloatsugars)/(13.2);
+            if (select2value=="grams" && select3value=="Tablespoon") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatsugars)/(7.5);
 
-            var outputrounded=Math.round(output*100)/100;
+                var outputrounded=Math.round(output*100)/100;
 
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " tablespoon (tbsp)" 
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
+
+            }
+
+            if (select2value=="Tablespoon" && select3value=="grams") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatsugars)*(7.5);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " g";
+
+            }
+
+            if (select2value=="Cups" && select3value=="Tablespoon") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(100/(7.5))*(parsfloatsugars);
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
+
+            }
+
+            if (select2value=="Tablespoon" && select3value=="Cups") {
+                
+                document.getElementById("sugarsoutput").style.backgroundColor="bisque";
+                var output=(parsfloatsugars)/(100/(7.5));
+
+                var outputrounded=Math.round(output*100)/100;
+
+                document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " Cups";
+
+            }
+
+
+
 
         }
-
-        if (select2value=="Tablespoon" && select3value=="grams") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(13.2)*(parsfloatsugars);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " g"; 
-
-        }
-
-        if (select2value=="Cups" && select3value=="Tablespoon") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(180/(13.2))*(parsfloatsugars);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
-
-        }
-
-        if (select2value=="Tablespoon" && select3value=="Cups") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(parsfloatsugars)/(180/(13.2));
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " Cups" 
-
-        }
-
-    
-
+        
+        
     }
 
-    if (select1value=="granulated sugar") {
-
-        if (select2value=="grams" && select3value=="Cups") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(parsfloatsugars)/(200);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " Cups";
-
-        }
-
-        if (select2value=="Cups" && select3value=="grams") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(200)*(parsfloatsugars);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " g";
-        }
-
-
-        if (select2value=="grams" && select3value=="Tablespoon") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(parsfloatsugars)/(12);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
-
-        }
-
-        if (select2value=="Tablespoon" && select3value=="grams") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(parsfloatsugars)*(12);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " g";
-
-        }
-
-        if (select2value=="Cups" && select3value=="Tablespoon") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(200/(12))*(parsfloatsugars);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
-
-        }
-
-        if (select2value=="Tablespoon" && select3value=="Cups") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(parsfloatsugars)/(200/(12));
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " Cups";
-
-        }
-
-
-
-
-    }
-    
-    if (select1value=="icing sugar") {
-
-        if (select2value=="grams" && select3value=="Cups") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(parsfloatsugars)/(100);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " Cups";
-
-        }
-
-        if (select2value=="Cups" && select3value=="grams") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(100)*(parsfloatsugars);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " g";
-        }
-
-
-        if (select2value=="grams" && select3value=="Tablespoon") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(parsfloatsugars)/(7.5);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " g" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
-
-        }
-
-        if (select2value=="Tablespoon" && select3value=="grams") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(parsfloatsugars)*(7.5);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " g";
-
-        }
-
-        if (select2value=="Cups" && select3value=="Tablespoon") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(100/(7.5))*(parsfloatsugars);
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " Cups" +" = "+" " + outputrounded + " tablespoon (tbsp)"; 
-
-        }
-
-        if (select2value=="Tablespoon" && select3value=="Cups") {
-             
-            document.getElementById("sugarsoutput").style.backgroundColor="bisque";
-            var output=(parsfloatsugars)/(100/(7.5));
-
-            var outputrounded=Math.round(output*100)/100;
-
-            document.getElementById("sugarsoutput1").innerHTML = parsfloatsugars + " tablespoon (tbsp)" +" = "+" " + outputrounded + " Cups";
-
-        }
-
-
-
-
-    }
-    
-    
 }
